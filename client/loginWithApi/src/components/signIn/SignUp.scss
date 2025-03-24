@@ -1,0 +1,95 @@
+$theme: #36a86f;
+.sign-up {
+  width: 400px;
+  height: max-content;
+  border: 1px solid $theme;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 48px;
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__item {
+      font-size: 14px;
+
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      //   color: $theme;
+      font-weight: 500;
+      &__title {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+        align-items: end;
+        svg {
+          font-size: 16px;
+        }
+      }
+      &__input {
+        width: 100%;
+        border: 1px solid $theme;
+        border-radius: 8px;
+        display: flex;
+        padding: 8px;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        svg {
+          cursor: pointer;
+          color: $theme;
+        }
+        input {
+          width: 100%;
+          height: 100%;
+          &::placeholder {
+            color: $theme;
+          }
+        }
+      }
+      span {
+        color: $theme !important;
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+    &__btn {
+      margin-top: 36px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid $theme;
+      cursor: pointer;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      color: #fff;
+      color: $theme;
+      &:hover {
+        background-color: $theme;
+        color: #fff;
+      }
+    }
+    span {
+      font-size: 12px;
+      text-align: left;
+      color: #f4f4f4;
+      a {
+        font-weight: 500;
+        color: $theme;
+      }
+    }
+  }
+}
